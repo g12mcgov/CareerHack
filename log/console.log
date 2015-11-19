@@ -1,0 +1,34 @@
+2015-11-19 01:01:43.555 [info] <0.7.0> Application lager started on node careerhack@gMAC
+2015-11-19 01:01:43.569 [info] <0.7.0> Application crypto started on node careerhack@gMAC
+2015-11-19 01:01:43.585 [info] <0.7.0> Application mimetypes started on node careerhack@gMAC
+2015-11-19 01:01:43.610 [notice] <0.62.0>@lager_app:132 Deprecated lager_file_backend config detected, please consider updating it
+2015-11-19 01:01:43.649 [info] <0.94.0> Starting Boss in development mode....
+
+2015-11-19 01:01:43.661 [info] <0.94.0>@boss_db:start:77 Start Database Adapter boss_db_adapter_mock options [{adapter,mock},{cache_enable,false},{cache_prefix,db},{shards,[]},{is_master_node,true},{db_host,"localhost"},{db_port,1978}]
+2015-11-19 01:01:43.728 [info] <0.94.0> Starting master services on careerhack@gMAC
+
+2015-11-19 01:01:43.749 [info] <0.7.0> Application tinymq started on node careerhack@gMAC
+2015-11-19 01:01:43.906 [info] <0.94.0> SSL:[]
+
+2015-11-19 01:01:43.910 [info] <0.94.0> Starting cowboy... on careerhack@gMAC
+
+2015-11-19 01:01:43.915 [info] <0.7.0> Application cowlib started on node careerhack@gMAC
+2015-11-19 01:01:43.920 [info] <0.7.0> Application ranch started on node careerhack@gMAC
+2015-11-19 01:01:43.934 [info] <0.7.0> Application cowboy started on node careerhack@gMAC
+2015-11-19 01:01:43.934 [info] <0.94.0> Starting http listener... on 0.0.0.0:8001 
+
+2015-11-19 01:01:44.009 [warning] <0.6.0> lager_error_logger_h dropped 72 messages in the last second that exceeded the limit of 50 messages/sec
+2015-11-19 01:01:44.009 [info] <0.261.0> Loading routes from "/Users/grantmcgovern/Dropbox/Developer/Projects/CareerHack/careerhack/priv/careerhack.routes" ....
+2015-11-19 01:01:44.025 [info] <0.94.0>@boss_load:load_all_modules:57 Loading application careerhack
+2015-11-19 01:01:44.057 [notice] <0.94.0>@boss_compiler:compile:47 Compile file "/Users/grantmcgovern/Dropbox/Developer/Projects/CareerHack/careerhack/src/mail/careerhack_incoming_mail_controller.erl" with options [{out_dir,undefined},{include_dirs,["/Users/grantmcgovern/Dropbox/Developer/Projects/CareerHack/careerhack/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-11-19 01:01:44.105 [notice] <0.94.0>@boss_compiler:compile:47 Compile file "/Users/grantmcgovern/Dropbox/Developer/Projects/CareerHack/careerhack/src/mail/careerhack_outgoing_mail_controller.erl" with options [{out_dir,undefined},{include_dirs,["/Users/grantmcgovern/Dropbox/Developer/Projects/CareerHack/careerhack/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-11-19 01:01:44.128 [notice] <0.94.0>@boss_compiler:compile:47 Compile file "/Users/grantmcgovern/Dropbox/Developer/Projects/CareerHack/careerhack/src/view/lib/tag_modules/careerhack_custom_tags.erl" with options [{out_dir,undefined},{include_dirs,["/Users/grantmcgovern/Dropbox/Developer/Projects/CareerHack/careerhack/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-11-19 01:01:44.146 [notice] <0.94.0>@boss_compiler:compile:47 Compile file "/Users/grantmcgovern/Dropbox/Developer/Projects/CareerHack/careerhack/src/view/lib/filter_modules/careerhack_custom_filters.erl" with options [{out_dir,undefined},{include_dirs,["/Users/grantmcgovern/Dropbox/Developer/Projects/CareerHack/careerhack/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-11-19 01:01:44.148 [info] <0.94.0>@boss_load:compile_view_dir_erlydtl:308 Compile Modules "src/view/lib/tag_html"  careerhack_view_lib_tags
+2015-11-19 01:01:44.223 [notice] <0.94.0>@boss_compiler:compile:47 Compile file "/Users/grantmcgovern/Dropbox/Developer/Projects/CareerHack/careerhack/priv/init/careerhack_01_news.erl" with options [{include_dirs,["/Users/grantmcgovern/Dropbox/Developer/Projects/CareerHack/careerhack/include"]}] 
+2015-11-19 01:02:06.590 [notice] <0.271.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-11-19 01:02:06.593 [info] <0.261.0> Loading routes from "/Users/grantmcgovern/Dropbox/Developer/Projects/CareerHack/careerhack/priv/careerhack.routes" ....
+2015-11-19 01:02:06.594 [info] <0.271.0> Route: "/"Url
+[]
+2015-11-19 01:02:06.595 [error] <0.271.0> GET / [careerhack] 404 2ms
+2015-11-19 01:02:06.922 [notice] <0.272.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
