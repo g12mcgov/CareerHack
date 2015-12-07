@@ -1,0 +1,24 @@
+2015-12-06 22:28:05.747 [error] <0.272.0> GET / [careerhack] 404 2ms
+2015-12-06 22:29:13.010 [error] <0.275.0> GET /greeting/hello [careerhack] 404 47ms
+2015-12-06 22:29:30.080 [error] <0.262.0> gen_server <0.262.0> terminated with reason: {'module could not be loaded',[{careerhack_greeting_controller,module_info,[attributes],[]},{boss_router_controller,default_action,2,[{file,"src/boss/boss_router_controller.erl"},{line,202}]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,157}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,...}]}]}
+2015-12-06 22:29:30.080 [error] <0.262.0> CRASH REPORT Process <0.262.0> with 0 neighbours exited with reason: call to undefined function careerhack_greeting_controller:module_info(attributes) in gen_server:terminate/6 line 746
+2015-12-06 22:29:30.081 [error] <0.261.0> Supervisor {<0.261.0>,boss_router_sup} had child router_controller started with boss_router_controller:start_link([{application,careerhack},{controllers,[]}]) at <0.262.0> exit with reason call to undefined function careerhack_greeting_controller:module_info(attributes) in context child_terminated
+2015-12-06 22:29:30.174 [error] <0.281.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: exit:{{undef,
+          [{careerhack_greeting_controller,module_info,[attributes],[]},
+           {boss_router_controller,default_action,2,
+               [{file,"src/boss/boss_router_controller.erl"},{line,202}]},
+           {boss_router_controller,route,2,
+               [{file,"src/boss/boss_router_controller.erl"},{line,157}]},
+           {boss_router_controller,handle_call,3,
+               [{file,"src/boss/boss_router_controller.erl"},{line,64}]},
+           {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},
+           {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},
+      {gen_server,call,[<0.262.0>,{route,"/greeting/"}]}} Stacktrace: [{gen_server,call,2,[{file,"gen_server.erl"},{line,182}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,245}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,236}]},{timer,tc,3,[{file,"timer.erl"},{line,194}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]},{boss_web_controller_handle_request,handle_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,442}]}]
+2015-12-06 22:29:33.749 [error] <0.282.0> GET /greeting/hello [careerhack] 404 20ms
+2015-12-06 22:32:24.603 [error] <0.301.0> GET /greeting/hello [careerhack] 404 14ms
+2015-12-06 22:39:40.849 [error] <0.322.0> GET /greeting/ [careerhack] 404 7ms
+2015-12-06 22:40:21.108 [error] <0.326.0> GET /greeting [careerhack] 404 8ms
+2015-12-06 23:05:34.699 [error] <0.394.0>@boss_web_controller:call_controller_action:319 Error in controller error:{badmatch,{error,["Greeting must be non-empty!"]}} Stacktrace: [{careerhack_greeting_controller,create,3,[{file,"/home/gaurav/careerhack/src/controller/careerhack_greeting_controller.erl"},{line,16}]},{boss_web_controller,call_controller_action,3,[{file,"src/boss/boss_web_controller.erl"},{line,316}]},{boss_web_controller,apply_action,4,[{file,"src/boss/boss_web_controller.erl"},{line,308}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,287}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,250}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,236}]},{timer,tc,3,[{file,"timer.erl"},{line,194}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]}]
+2015-12-06 23:05:34.702 [error] <0.394.0> Error in controller, see console.log for details
+
+2015-12-06 23:05:34.758 [error] <0.394.0> POST /greeting/create [careerhack] 500 64ms

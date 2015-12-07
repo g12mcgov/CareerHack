@@ -1,0 +1,38 @@
+2015-12-06 22:28:05 =ERROR REPORT====
+GET / [careerhack] 404 2ms2015-12-06 22:29:13 =ERROR REPORT====
+GET /greeting/hello [careerhack] 404 47ms2015-12-06 22:29:30 =ERROR REPORT====
+** Generic server <0.262.0> terminating 
+** Last message in was {route,"/greeting/"}
+** When Server state == {state,careerhack,["careerhack_greeting_controller"],45086,49183,53280}
+** Reason for termination == 
+** {'module could not be loaded',[{careerhack_greeting_controller,module_info,[attributes],[]},{boss_router_controller,default_action,2,[{file,"src/boss/boss_router_controller.erl"},{line,202}]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,157}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+2015-12-06 22:29:30 =CRASH REPORT====
+  crasher:
+    initial call: boss_router_controller:init/1
+    pid: <0.262.0>
+    registered_name: []
+    exception exit: {{undef,[{careerhack_greeting_controller,module_info,[attributes],[]},{boss_router_controller,default_action,2,[{file,"src/boss/boss_router_controller.erl"},{line,202}]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,157}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,746}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+    ancestors: [<0.261.0>,boss_web,boss_sup,<0.93.0>]
+    messages: []
+    links: [<0.261.0>]
+    dictionary: [{boss_environment,development}]
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 2627
+  neighbours:
+2015-12-06 22:29:30 =SUPERVISOR REPORT====
+     Supervisor: {<0.261.0>,boss_router_sup}
+     Context:    child_terminated
+     Reason:     {undef,[{careerhack_greeting_controller,module_info,[attributes],[]},{boss_router_controller,default_action,2,[{file,"src/boss/boss_router_controller.erl"},{line,202}]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,157}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+     Offender:   [{pid,<0.262.0>},{name,router_controller},{mfargs,{boss_router_controller,start_link,[[{application,careerhack},{controllers,[]}]]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2015-12-06 22:29:33 =ERROR REPORT====
+GET /greeting/hello [careerhack] 404 20ms2015-12-06 22:32:24 =ERROR REPORT====
+GET /greeting/hello [careerhack] 404 14ms2015-12-06 22:39:40 =ERROR REPORT====
+GET /greeting/ [careerhack] 404 7ms2015-12-06 22:40:21 =ERROR REPORT====
+GET /greeting [careerhack] 404 8ms2015-12-06 23:05:34 =ERROR REPORT====
+"Error in controller, see console.log for details\n"
+2015-12-06 23:05:34 =ERROR REPORT====
+POST /greeting/create [careerhack] 500 64ms

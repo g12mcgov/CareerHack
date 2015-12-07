@@ -1,0 +1,360 @@
+2015-12-06 22:27:51.433 [info] <0.7.0> Application lager started on node careerhack@fastblade
+2015-12-06 22:27:51.439 [info] <0.7.0> Application crypto started on node careerhack@fastblade
+2015-12-06 22:27:51.447 [info] <0.7.0> Application mimetypes started on node careerhack@fastblade
+2015-12-06 22:27:51.471 [info] <0.95.0> Starting Boss in development mode....
+
+2015-12-06 22:27:51.477 [info] <0.95.0>@boss_db:start:77 Start Database Adapter boss_db_adapter_mock options [{adapter,mock},{cache_enable,false},{cache_prefix,db},{shards,[]},{is_master_node,true},{db_host,"localhost"},{db_port,1978}]
+2015-12-06 22:27:51.507 [info] <0.95.0> Starting master services on careerhack@fastblade
+
+2015-12-06 22:27:51.517 [info] <0.7.0> Application tinymq started on node careerhack@fastblade
+2015-12-06 22:27:51.535 [info] <0.95.0> SSL:[]
+
+2015-12-06 22:27:51.537 [info] <0.95.0> Starting cowboy... on careerhack@fastblade
+
+2015-12-06 22:27:51.539 [info] <0.7.0> Application cowlib started on node careerhack@fastblade
+2015-12-06 22:27:51.542 [info] <0.7.0> Application ranch started on node careerhack@fastblade
+2015-12-06 22:27:51.549 [info] <0.7.0> Application cowboy started on node careerhack@fastblade
+2015-12-06 22:27:51.550 [info] <0.95.0> Starting http listener... on 0.0.0.0:8001 
+
+2015-12-06 22:27:51.590 [info] <0.95.0>@boss_load:load_all_modules:57 Loading application careerhack
+2015-12-06 22:27:51.599 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/gaurav/careerhack/src/mail/careerhack_outgoing_mail_controller.erl" with options [{out_dir,undefined},{include_dirs,["/home/gaurav/careerhack/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-12-06 22:27:51.618 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/gaurav/careerhack/src/mail/careerhack_incoming_mail_controller.erl" with options [{out_dir,undefined},{include_dirs,["/home/gaurav/careerhack/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-12-06 22:27:51.625 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/gaurav/careerhack/src/view/lib/tag_modules/careerhack_custom_tags.erl" with options [{out_dir,undefined},{include_dirs,["/home/gaurav/careerhack/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-12-06 22:27:51.631 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/gaurav/careerhack/src/view/lib/filter_modules/careerhack_custom_filters.erl" with options [{out_dir,undefined},{include_dirs,["/home/gaurav/careerhack/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-12-06 22:27:51.633 [info] <0.95.0>@boss_load:compile_view_dir_erlydtl:308 Compile Modules "src/view/lib/tag_html"  careerhack_view_lib_tags
+2015-12-06 22:27:51.665 [notice] <0.95.0>@boss_compiler:compile:47 Compile file "/home/gaurav/careerhack/priv/init/careerhack_01_news.erl" with options [{include_dirs,["/home/gaurav/careerhack/include"]}] 
+2015-12-06 22:27:51.761 [notice] <0.63.0>@lager_app:132 Deprecated lager_file_backend config detected, please consider updating it
+2015-12-06 22:28:05.741 [notice] <0.272.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 22:28:05.745 [warning] <0.6.0> lager_error_logger_h dropped 84 messages in the last second that exceeded the limit of 50 messages/sec
+2015-12-06 22:28:05.745 [info] <0.262.0> Loading routes from "/home/gaurav/careerhack/priv/careerhack.routes" ....
+2015-12-06 22:28:05.745 [info] <0.272.0> Route: "/"Url
+[]
+2015-12-06 22:28:05.747 [error] <0.272.0> GET / [careerhack] 404 2ms
+2015-12-06 22:28:05.973 [notice] <0.273.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 22:29:12.961 [notice] <0.275.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 22:29:12.962 [info] <0.262.0> Loading routes from "/home/gaurav/careerhack/priv/careerhack.routes" ....
+2015-12-06 22:29:12.963 [info] <0.275.0> Route: "/greeting/hello"Url
+[]
+2015-12-06 22:29:12.983 [info] <0.275.0>@boss_controller_compiler:compile:59 Compile controller /home/gaurav/careerhack/src/controller/careerhack_greeting_controller.erl
+2015-12-06 22:29:12.983 [notice] <0.275.0>@boss_compiler:compile:47 Compile file "/home/gaurav/careerhack/src/controller/careerhack_greeting_controller.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_controller_compiler.add_routes_to_forms.1>},{out_dir,undefined},{include_dirs,["/home/gaurav/careerhack/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-12-06 22:29:13.010 [error] <0.275.0> GET /greeting/hello [careerhack] 404 47ms
+2015-12-06 22:29:30.069 [notice] <0.281.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 22:29:30.070 [info] <0.262.0> Loading routes from "/home/gaurav/careerhack/priv/careerhack.routes" ....
+2015-12-06 22:29:30.071 [info] <0.281.0> Route: "/greeting/"Url
+[]
+2015-12-06 22:29:30.080 [error] <0.262.0> gen_server <0.262.0> terminated with reason: {'module could not be loaded',[{careerhack_greeting_controller,module_info,[attributes],[]},{boss_router_controller,default_action,2,[{file,"src/boss/boss_router_controller.erl"},{line,202}]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,157}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,...}]}]}
+2015-12-06 22:29:30.080 [error] <0.262.0> CRASH REPORT Process <0.262.0> with 0 neighbours exited with reason: call to undefined function careerhack_greeting_controller:module_info(attributes) in gen_server:terminate/6 line 746
+2015-12-06 22:29:30.081 [error] <0.261.0> Supervisor {<0.261.0>,boss_router_sup} had child router_controller started with boss_router_controller:start_link([{application,careerhack},{controllers,[]}]) at <0.262.0> exit with reason call to undefined function careerhack_greeting_controller:module_info(attributes) in context child_terminated
+2015-12-06 22:29:30.174 [info] <0.285.0> Loading routes from "/home/gaurav/careerhack/priv/careerhack.routes" ....
+2015-12-06 22:29:30.174 [error] <0.281.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: exit:{{undef,
+          [{careerhack_greeting_controller,module_info,[attributes],[]},
+           {boss_router_controller,default_action,2,
+               [{file,"src/boss/boss_router_controller.erl"},{line,202}]},
+           {boss_router_controller,route,2,
+               [{file,"src/boss/boss_router_controller.erl"},{line,157}]},
+           {boss_router_controller,handle_call,3,
+               [{file,"src/boss/boss_router_controller.erl"},{line,64}]},
+           {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},
+           {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},
+      {gen_server,call,[<0.262.0>,{route,"/greeting/"}]}} Stacktrace: [{gen_server,call,2,[{file,"gen_server.erl"},{line,182}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,245}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,236}]},{timer,tc,3,[{file,"timer.erl"},{line,194}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]},{boss_web_controller_handle_request,handle_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,442}]}]
+2015-12-06 22:29:33.727 [notice] <0.282.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 22:29:33.728 [info] <0.285.0> Loading routes from "/home/gaurav/careerhack/priv/careerhack.routes" ....
+2015-12-06 22:29:33.729 [info] <0.282.0> Route: "/greeting/hello"Url
+[]
+2015-12-06 22:29:33.741 [info] <0.282.0>@boss_controller_compiler:compile:59 Compile controller /home/gaurav/careerhack/src/controller/careerhack_greeting_controller.erl
+2015-12-06 22:29:33.741 [notice] <0.282.0>@boss_compiler:compile:47 Compile file "/home/gaurav/careerhack/src/controller/careerhack_greeting_controller.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_controller_compiler.add_routes_to_forms.1>},{out_dir,undefined},{include_dirs,["/home/gaurav/careerhack/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-12-06 22:29:33.749 [error] <0.282.0> GET /greeting/hello [careerhack] 404 20ms
+2015-12-06 22:30:12.574 [notice] <0.290.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 22:30:12.575 [info] <0.285.0> Loading routes from "/home/gaurav/careerhack/priv/careerhack.routes" ....
+2015-12-06 22:30:12.576 [info] <0.290.0> Route: "/greeting/hello"Url
+[]
+2015-12-06 22:30:12.587 [info] <0.290.0>@boss_controller_compiler:compile:59 Compile controller /home/gaurav/careerhack/src/controller/careerhack_greeting_controller.erl
+2015-12-06 22:30:12.587 [notice] <0.290.0>@boss_compiler:compile:47 Compile file "/home/gaurav/careerhack/src/controller/careerhack_greeting_controller.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_controller_compiler.add_routes_to_forms.1>},{out_dir,undefined},{include_dirs,["/home/gaurav/careerhack/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-12-06 22:30:12.614 [notice] <0.290.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-12-06 22:30:12.616 [info] <0.290.0> GET /greeting/hello [careerhack] 200 41ms
+2015-12-06 22:30:12.784 [notice] <0.293.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 22:31:13.467 [notice] <0.294.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 22:31:13.468 [info] <0.285.0> Loading routes from "/home/gaurav/careerhack/priv/careerhack.routes" ....
+2015-12-06 22:31:13.469 [info] <0.294.0> Route: "/greeting/hello"Url
+[]
+2015-12-06 22:31:13.471 [info] <0.294.0>@boss_controller_compiler:compile:59 Compile controller /home/gaurav/careerhack/src/controller/careerhack_greeting_controller.erl
+2015-12-06 22:31:13.471 [notice] <0.294.0>@boss_compiler:compile:47 Compile file "/home/gaurav/careerhack/src/controller/careerhack_greeting_controller.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_controller_compiler.add_routes_to_forms.1>},{out_dir,undefined},{include_dirs,["/home/gaurav/careerhack/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-12-06 22:31:13.478 [notice] <0.294.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-12-06 22:31:13.494 [info] <0.294.0> GET /greeting/hello [careerhack] 200 26ms
+2015-12-06 22:31:13.696 [notice] <0.297.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 22:31:48.256 [notice] <0.298.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 22:31:48.257 [info] <0.285.0> Loading routes from "/home/gaurav/careerhack/priv/careerhack.routes" ....
+2015-12-06 22:31:48.258 [info] <0.298.0> Route: "/greeting/hello"Url
+[]
+2015-12-06 22:31:48.261 [notice] <0.298.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-12-06 22:31:48.263 [info] <0.298.0> GET /greeting/hello [careerhack] 200 6ms
+2015-12-06 22:31:48.436 [notice] <0.299.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 22:32:24.588 [notice] <0.301.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 22:32:24.589 [info] <0.285.0> Loading routes from "/home/gaurav/careerhack/priv/careerhack.routes" ....
+2015-12-06 22:32:24.589 [info] <0.301.0> Route: "/greeting/hello"Url
+[]
+2015-12-06 22:32:24.591 [info] <0.301.0>@boss_controller_compiler:compile:59 Compile controller /home/gaurav/careerhack/src/controller/careerhack_greeting_controller.erl
+2015-12-06 22:32:24.591 [notice] <0.301.0>@boss_compiler:compile:47 Compile file "/home/gaurav/careerhack/src/controller/careerhack_greeting_controller.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_controller_compiler.add_routes_to_forms.1>},{out_dir,undefined},{include_dirs,["/home/gaurav/careerhack/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-12-06 22:32:24.599 [notice] <0.301.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-12-06 22:32:24.603 [error] <0.301.0> GET /greeting/hello [careerhack] 404 14ms
+2015-12-06 22:32:24.796 [notice] <0.302.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 22:34:13.562 [notice] <0.305.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 22:34:13.563 [info] <0.285.0> Loading routes from "/home/gaurav/careerhack/priv/careerhack.routes" ....
+2015-12-06 22:34:13.564 [info] <0.305.0> Route: "/greeting/hello"Url
+[]
+2015-12-06 22:34:13.567 [notice] <0.305.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-12-06 22:34:13.605 [info] <0.305.0> GET /greeting/hello [careerhack] 200 42ms
+2015-12-06 22:34:13.808 [notice] <0.306.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 22:34:29.321 [notice] <0.309.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 22:34:29.321 [info] <0.285.0> Loading routes from "/home/gaurav/careerhack/priv/careerhack.routes" ....
+2015-12-06 22:34:29.322 [info] <0.309.0> Route: "/greeting/hello"Url
+[]
+2015-12-06 22:34:29.326 [notice] <0.309.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-12-06 22:34:29.338 [info] <0.309.0> GET /greeting/hello [careerhack] 200 16ms
+2015-12-06 22:34:29.523 [notice] <0.310.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 22:39:02.906 [notice] <0.313.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 22:39:02.907 [info] <0.285.0> Loading routes from "/home/gaurav/careerhack/priv/careerhack.routes" ....
+2015-12-06 22:39:02.907 [info] <0.313.0> Route: "/greeting/hello"Url
+[]
+2015-12-06 22:39:02.922 [notice] <0.313.0>@boss_compiler:compile:47 Compile file "/home/gaurav/careerhack/src/model/greeting.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_record_compiler.trick_out_forms.2>},{token_transform,#Fun<boss_record_compiler.process_tokens.1>},{out_dir,undefined},{include_dirs,["/home/gaurav/careerhack/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-12-06 22:39:02.922 [info] <0.313.0>@boss_record_compiler:process_tokens:120 Tokens [{'-',{1,1}},{atom,{1,2},module},{'(',{1,8}},{atom,{1,9},greeting},{',',{1,17}},{'[',{1,19}},{var,{1,20},'Id'},{',',{1,22}},{var,{1,24},'GreetingText'},{']',{1,36}},{')',{1,37}},{dot,{1,38}},{'-',{2,1}},{atom,{2,2},compile},{'(',{2,9}},{atom,{2,10},export_all},{')',{2,20}},{dot,{2,21}}]
+2015-12-06 22:39:02.922 [notice] <0.313.0>@boss_record_compiler:make_generated_forms:225 Module "greeting" Parameters ['Id','GreetingText'] Attributes[{compile,export_all}]
+2015-12-06 22:39:02.938 [notice] <0.313.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-12-06 22:39:02.940 [info] <0.313.0> GET /greeting/hello [careerhack] 200 33ms
+2015-12-06 22:39:03.151 [notice] <0.314.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 22:39:38.988 [notice] <0.319.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 22:39:38.989 [info] <0.285.0> Loading routes from "/home/gaurav/careerhack/priv/careerhack.routes" ....
+2015-12-06 22:39:38.990 [info] <0.319.0> Route: "/greeting/hello"Url
+[]
+2015-12-06 22:39:38.994 [notice] <0.319.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-12-06 22:39:38.997 [info] <0.319.0> GET /greeting/hello [careerhack] 200 7ms
+2015-12-06 22:39:39.162 [notice] <0.320.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 22:39:40.840 [notice] <0.322.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 22:39:40.841 [info] <0.285.0> Loading routes from "/home/gaurav/careerhack/priv/careerhack.routes" ....
+2015-12-06 22:39:40.842 [info] <0.322.0> Route: "/greeting/"Url
+[]
+2015-12-06 22:39:40.846 [notice] <0.322.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-12-06 22:39:40.846 [notice] <0.322.0>@boss_controller_adapter_pmod:action:99 [ChicagoBoss] The function careerhack_greeting_controller:index/2 is not exported, if in doubt add -export([index/2])) to the module
+2015-12-06 22:39:40.849 [error] <0.322.0> GET /greeting/ [careerhack] 404 7ms
+2015-12-06 22:40:21.099 [notice] <0.326.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 22:40:21.100 [info] <0.285.0> Loading routes from "/home/gaurav/careerhack/priv/careerhack.routes" ....
+2015-12-06 22:40:21.101 [info] <0.326.0> Route: "/greeting"Url
+[]
+2015-12-06 22:40:21.105 [notice] <0.326.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-12-06 22:40:21.105 [notice] <0.326.0>@boss_controller_adapter_pmod:action:99 [ChicagoBoss] The function careerhack_greeting_controller:index/2 is not exported, if in doubt add -export([index/2])) to the module
+2015-12-06 22:40:21.108 [error] <0.326.0> GET /greeting [careerhack] 404 8ms
+2015-12-06 22:41:20.316 [notice] <0.329.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 22:41:20.317 [info] <0.285.0> Loading routes from "/home/gaurav/careerhack/priv/careerhack.routes" ....
+2015-12-06 22:41:20.318 [info] <0.329.0> Route: "/greeting/hello"Url
+[]
+2015-12-06 22:41:20.322 [notice] <0.329.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-12-06 22:41:20.326 [info] <0.329.0> GET /greeting/hello [careerhack] 200 8ms
+2015-12-06 22:41:20.515 [notice] <0.331.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 22:44:19.815 [notice] <0.339.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 22:44:19.816 [info] <0.339.0>@boss_record_compiler:process_tokens:120 Tokens [{'-',{1,1}},{atom,{1,2},module},{'(',{1,8}},{atom,{1,9},greeting},{',',{1,17}},{'[',{1,19}},{var,{1,20},'Id'},{',',{1,22}},{var,{1,24},'GreetingText'},{']',{1,36}},{')',{1,37}},{dot,{1,38}},{'-',{2,1}},{atom,{2,2},compile},{'(',{2,9}},{atom,{2,10},export_all},{')',{2,20}},{dot,{2,21}}]
+2015-12-06 22:44:19.816 [notice] <0.339.0>@boss_record_compiler:make_generated_forms:225 Module "greeting" Parameters ['Id','GreetingText'] Attributes[{compile,export_all}]
+2015-12-06 22:44:19.967 [info] <0.339.0> GET /doc/greeting [careerhack] 200 151ms
+2015-12-06 22:44:41.621 [notice] <0.344.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 22:44:41.623 [info] <0.344.0>@boss_record_compiler:process_tokens:120 Tokens [{'-',{1,1}},{atom,{1,2},module},{'(',{1,8}},{atom,{1,9},greeting},{',',{1,17}},{'[',{1,19}},{var,{1,20},'Id'},{',',{1,22}},{var,{1,24},'GreetingText'},{']',{1,36}},{')',{1,37}},{dot,{1,38}},{'-',{2,1}},{atom,{2,2},compile},{'(',{2,9}},{atom,{2,10},export_all},{')',{2,20}},{dot,{2,21}}]
+2015-12-06 22:44:41.623 [notice] <0.344.0>@boss_record_compiler:make_generated_forms:225 Module "greeting" Parameters ['Id','GreetingText'] Attributes[{compile,export_all}]
+2015-12-06 22:44:41.643 [info] <0.344.0> GET /doc/greeting [careerhack] 200 21ms
+2015-12-06 22:52:13.266 [notice] <0.357.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 22:52:13.267 [info] <0.285.0> Loading routes from "/home/gaurav/careerhack/priv/careerhack.routes" ....
+2015-12-06 22:52:13.268 [info] <0.357.0> Route: "/greeting/list"Url
+[]
+2015-12-06 22:52:13.272 [notice] <0.357.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-12-06 22:52:13.272 [notice] <0.357.0>@boss_controller_adapter_pmod:action:99 [ChicagoBoss] The function careerhack_greeting_controller:list/2 is not exported, if in doubt add -export([list/2])) to the module
+2015-12-06 22:52:13.298 [info] <0.357.0> GET /greeting/list [careerhack] 200 30ms
+2015-12-06 22:53:35.358 [notice] <0.362.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 22:53:35.359 [info] <0.285.0> Loading routes from "/home/gaurav/careerhack/priv/careerhack.routes" ....
+2015-12-06 22:53:35.360 [info] <0.362.0> Route: "/greeting/list"Url
+[]
+2015-12-06 22:53:35.362 [info] <0.362.0>@boss_controller_compiler:compile:59 Compile controller /home/gaurav/careerhack/src/controller/careerhack_greeting_controller.erl
+2015-12-06 22:53:35.362 [notice] <0.362.0>@boss_compiler:compile:47 Compile file "/home/gaurav/careerhack/src/controller/careerhack_greeting_controller.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_controller_compiler.add_routes_to_forms.1>},{out_dir,undefined},{include_dirs,["/home/gaurav/careerhack/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-12-06 22:53:35.373 [notice] <0.362.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-12-06 22:53:35.377 [info] <0.362.0> GET /greeting/list [careerhack] 200 17ms
+2015-12-06 22:53:35.565 [notice] <0.363.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 22:54:49.784 [notice] <0.366.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 22:54:49.785 [info] <0.285.0> Loading routes from "/home/gaurav/careerhack/priv/careerhack.routes" ....
+2015-12-06 22:54:49.786 [info] <0.366.0> Route: "/greeting/list"Url
+[]
+2015-12-06 22:54:49.790 [notice] <0.366.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-12-06 22:54:49.816 [info] <0.366.0> GET /greeting/list [careerhack] 200 31ms
+2015-12-06 22:54:50.028 [notice] <0.367.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 22:54:50.885 [notice] <0.370.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 22:54:50.886 [info] <0.285.0> Loading routes from "/home/gaurav/careerhack/priv/careerhack.routes" ....
+2015-12-06 22:54:50.887 [info] <0.370.0> Route: "/greeting/create"Url
+[]
+2015-12-06 22:54:50.891 [notice] <0.370.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-12-06 22:54:50.891 [notice] <0.370.0>@boss_controller_adapter_pmod:action:99 [ChicagoBoss] The function careerhack_greeting_controller:create/2 is not exported, if in doubt add -export([create/2])) to the module
+2015-12-06 22:54:50.931 [info] <0.370.0> GET /greeting/create [careerhack] 200 44ms
+2015-12-06 22:55:56.835 [notice] <0.373.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 22:55:56.835 [info] <0.285.0> Loading routes from "/home/gaurav/careerhack/priv/careerhack.routes" ....
+2015-12-06 22:55:56.837 [info] <0.373.0> Route: "/greeting/create"Url
+[]
+2015-12-06 22:55:56.839 [info] <0.373.0>@boss_controller_compiler:compile:59 Compile controller /home/gaurav/careerhack/src/controller/careerhack_greeting_controller.erl
+2015-12-06 22:55:56.839 [notice] <0.373.0>@boss_compiler:compile:47 Compile file "/home/gaurav/careerhack/src/controller/careerhack_greeting_controller.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_controller_compiler.add_routes_to_forms.1>},{out_dir,undefined},{include_dirs,["/home/gaurav/careerhack/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-12-06 22:55:56.853 [notice] <0.373.0>@boss_controller_adapter_pmod:action:91 Request Method: 'POST', Tokens: []
+2015-12-06 22:55:56.856 [info] <0.373.0> POST /greeting/create [careerhack] 302 21ms
+2015-12-06 22:55:56.861 [notice] <0.376.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 22:55:56.862 [info] <0.285.0> Loading routes from "/home/gaurav/careerhack/priv/careerhack.routes" ....
+2015-12-06 22:55:56.863 [info] <0.376.0> Route: "/greeting/list"Url
+[]
+2015-12-06 22:55:56.866 [notice] <0.376.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-12-06 22:55:56.870 [info] <0.376.0> GET /greeting/list [careerhack] 200 8ms
+2015-12-06 22:56:36.697 [notice] <0.378.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 22:56:36.698 [info] <0.285.0> Loading routes from "/home/gaurav/careerhack/priv/careerhack.routes" ....
+2015-12-06 22:56:36.698 [info] <0.378.0> Route: "/greeting/list"Url
+[]
+2015-12-06 22:56:36.702 [notice] <0.378.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-12-06 22:56:36.732 [info] <0.378.0> GET /greeting/list [careerhack] 200 34ms
+2015-12-06 22:56:36.916 [notice] <0.379.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 22:57:19.998 [notice] <0.382.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 22:57:19.999 [info] <0.285.0> Loading routes from "/home/gaurav/careerhack/priv/careerhack.routes" ....
+2015-12-06 22:57:20.000 [info] <0.382.0> Route: "/greeting/list"Url
+[]
+2015-12-06 22:57:20.001 [info] <0.382.0>@boss_controller_compiler:compile:59 Compile controller /home/gaurav/careerhack/src/controller/careerhack_greeting_controller.erl
+2015-12-06 22:57:20.002 [notice] <0.382.0>@boss_compiler:compile:47 Compile file "/home/gaurav/careerhack/src/controller/careerhack_greeting_controller.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_controller_compiler.add_routes_to_forms.1>},{out_dir,undefined},{include_dirs,["/home/gaurav/careerhack/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-12-06 22:57:20.017 [notice] <0.382.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-12-06 22:57:20.022 [info] <0.382.0> GET /greeting/list [careerhack] 200 23ms
+2015-12-06 22:57:20.227 [notice] <0.385.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 22:57:26.234 [notice] <0.386.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 22:57:26.235 [info] <0.285.0> Loading routes from "/home/gaurav/careerhack/priv/careerhack.routes" ....
+2015-12-06 22:57:26.236 [info] <0.386.0> Route: "/greeting/goodbye"Url
+[]
+2015-12-06 22:57:26.239 [notice] <0.386.0>@boss_controller_adapter_pmod:action:91 Request Method: 'POST', Tokens: []
+2015-12-06 22:57:26.242 [info] <0.386.0> POST /greeting/goodbye [careerhack] 302 7ms
+2015-12-06 22:57:26.247 [notice] <0.388.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 22:57:26.247 [info] <0.285.0> Loading routes from "/home/gaurav/careerhack/priv/careerhack.routes" ....
+2015-12-06 22:57:26.248 [info] <0.388.0> Route: "/greeting/list"Url
+[]
+2015-12-06 22:57:26.252 [notice] <0.388.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-12-06 22:57:26.256 [info] <0.388.0> GET /greeting/list [careerhack] 200 8ms
+2015-12-06 23:05:33.760 [notice] <0.390.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 23:05:33.761 [info] <0.285.0> Loading routes from "/home/gaurav/careerhack/priv/careerhack.routes" ....
+2015-12-06 23:05:33.762 [info] <0.390.0> Route: "/greeting/create"Url
+[]
+2015-12-06 23:05:33.764 [notice] <0.390.0>@boss_compiler:compile:47 Compile file "/home/gaurav/careerhack/src/model/greeting.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_record_compiler.trick_out_forms.2>},{token_transform,#Fun<boss_record_compiler.process_tokens.1>},{out_dir,undefined},{include_dirs,["/home/gaurav/careerhack/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-12-06 23:05:33.764 [info] <0.390.0>@boss_record_compiler:process_tokens:120 Tokens [{'-',{1,1}},{atom,{1,2},module},{'(',{1,8}},{atom,{1,9},greeting},{',',{1,17}},{'[',{1,19}},{var,{1,20},'Id'},{',',{1,22}},{var,{1,24},'GreetingText'},{']',{1,36}},{')',{1,37}},{dot,{1,38}},{'-',{2,1}},{atom,{2,2},compile},{'(',{2,9}},{atom,{2,10},export_all},{')',{2,20}},{dot,{2,21}},{atom,{4,1},validation_tests},{'(',{4,17}},{')',{4,18}},{'->',{4,20}},{'[',{5,2}},{'{',{5,3}},{fun,{5,4}},{'(',{5,7}},{')',{5,8}},{'->',{5,10}},{atom,{5,13},length},{'(',{5,19}},{var,{5,20},'GreetingText'},{')',{5,32}},{'>',{5,34}},{integer,{5,36},0},{end,{5,38}},{',',{5,41}},{string,{6,2},"Greeting must be non-empty!"},{'}',{6,31}},{',',{6,32}},{'{',{7,2}},{fun,{7,3}},{'(',{7,6}},{')',{7,7}},{'->',{7,9}},{atom,{7,12},length},{'(',{7,18}},{var,{7,19},'GreetingText'},{')',{7,31}},{'=<',{7,33}},{integer,{7,36},140},{end,{7,40}},{',',{7,43}},{string,{8,2},"Greeting must be tweetable"},{'}',{8,30}},{']',{8,31}},{dot,{8,32}}]
+2015-12-06 23:05:33.765 [notice] <0.390.0>@boss_record_compiler:make_generated_forms:225 Module "greeting" Parameters ['Id','GreetingText'] Attributes[{compile,export_all}]
+2015-12-06 23:05:33.792 [notice] <0.390.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-12-06 23:05:33.820 [info] <0.390.0> GET /greeting/create [careerhack] 200 59ms
+2015-12-06 23:05:34.693 [notice] <0.394.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 23:05:34.694 [info] <0.285.0> Loading routes from "/home/gaurav/careerhack/priv/careerhack.routes" ....
+2015-12-06 23:05:34.695 [info] <0.394.0> Route: "/greeting/create"Url
+[]
+2015-12-06 23:05:34.698 [notice] <0.394.0>@boss_controller_adapter_pmod:action:91 Request Method: 'POST', Tokens: []
+2015-12-06 23:05:34.699 [error] <0.394.0>@boss_web_controller:call_controller_action:319 Error in controller error:{badmatch,{error,["Greeting must be non-empty!"]}} Stacktrace: [{careerhack_greeting_controller,create,3,[{file,"/home/gaurav/careerhack/src/controller/careerhack_greeting_controller.erl"},{line,16}]},{boss_web_controller,call_controller_action,3,[{file,"src/boss/boss_web_controller.erl"},{line,316}]},{boss_web_controller,apply_action,4,[{file,"src/boss/boss_web_controller.erl"},{line,308}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,287}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,250}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,236}]},{timer,tc,3,[{file,"timer.erl"},{line,194}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]}]
+2015-12-06 23:05:34.702 [error] <0.394.0> Error in controller, see console.log for details
+
+2015-12-06 23:05:34.758 [error] <0.394.0> POST /greeting/create [careerhack] 500 64ms
+2015-12-06 23:07:49.258 [notice] <0.397.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 23:07:49.259 [info] <0.285.0> Loading routes from "/home/gaurav/careerhack/priv/careerhack.routes" ....
+2015-12-06 23:07:49.260 [info] <0.397.0> Route: "/greeting/create"Url
+[]
+2015-12-06 23:07:49.262 [info] <0.397.0>@boss_controller_compiler:compile:59 Compile controller /home/gaurav/careerhack/src/controller/careerhack_greeting_controller.erl
+2015-12-06 23:07:49.262 [notice] <0.397.0>@boss_compiler:compile:47 Compile file "/home/gaurav/careerhack/src/controller/careerhack_greeting_controller.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_controller_compiler.add_routes_to_forms.1>},{out_dir,undefined},{include_dirs,["/home/gaurav/careerhack/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-12-06 23:07:49.279 [notice] <0.397.0>@boss_controller_adapter_pmod:action:91 Request Method: 'POST', Tokens: []
+2015-12-06 23:07:49.283 [info] <0.397.0> POST /greeting/create [careerhack] 200 24ms
+2015-12-06 23:09:57.899 [notice] <0.400.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 23:09:57.900 [info] <0.285.0> Loading routes from "/home/gaurav/careerhack/priv/careerhack.routes" ....
+2015-12-06 23:09:57.901 [info] <0.400.0> Route: "/greeting/create"Url
+[]
+2015-12-06 23:09:57.904 [notice] <0.400.0>@boss_controller_adapter_pmod:action:91 Request Method: 'POST', Tokens: []
+2015-12-06 23:09:57.907 [info] <0.400.0> POST /greeting/create [careerhack] 302 7ms
+2015-12-06 23:09:57.912 [notice] <0.402.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 23:09:57.913 [info] <0.285.0> Loading routes from "/home/gaurav/careerhack/priv/careerhack.routes" ....
+2015-12-06 23:09:57.913 [info] <0.402.0> Route: "/greeting/list"Url
+[]
+2015-12-06 23:09:57.917 [notice] <0.402.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-12-06 23:09:57.921 [info] <0.402.0> GET /greeting/list [careerhack] 200 8ms
+2015-12-06 23:10:00.662 [notice] <0.404.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 23:10:00.663 [info] <0.285.0> Loading routes from "/home/gaurav/careerhack/priv/careerhack.routes" ....
+2015-12-06 23:10:00.663 [info] <0.404.0> Route: "/greeting/create"Url
+[]
+2015-12-06 23:10:00.667 [notice] <0.404.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-12-06 23:10:00.707 [info] <0.404.0> GET /greeting/create [careerhack] 200 44ms
+2015-12-06 23:10:16.125 [notice] <0.407.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 23:10:16.126 [info] <0.285.0> Loading routes from "/home/gaurav/careerhack/priv/careerhack.routes" ....
+2015-12-06 23:10:16.126 [info] <0.407.0> Route: "/greeting/create"Url
+[]
+2015-12-06 23:10:16.130 [notice] <0.407.0>@boss_controller_adapter_pmod:action:91 Request Method: 'POST', Tokens: []
+2015-12-06 23:10:16.134 [info] <0.407.0> POST /greeting/create [careerhack] 200 8ms
+2015-12-06 23:11:08.873 [notice] <0.409.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 23:11:08.874 [info] <0.285.0> Loading routes from "/home/gaurav/careerhack/priv/careerhack.routes" ....
+2015-12-06 23:11:08.875 [info] <0.409.0> Route: "/greeting/create"Url
+[]
+2015-12-06 23:11:08.878 [notice] <0.409.0>@boss_controller_adapter_pmod:action:91 Request Method: 'POST', Tokens: []
+2015-12-06 23:11:08.910 [info] <0.409.0> POST /greeting/create [careerhack] 200 35ms
+2015-12-06 23:11:10.792 [notice] <0.412.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 23:11:10.793 [info] <0.285.0> Loading routes from "/home/gaurav/careerhack/priv/careerhack.routes" ....
+2015-12-06 23:11:10.793 [info] <0.412.0> Route: "/greeting/create"Url
+[]
+2015-12-06 23:11:10.797 [notice] <0.412.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-12-06 23:11:10.801 [info] <0.412.0> GET /greeting/create [careerhack] 200 8ms
+2015-12-06 23:11:22.217 [notice] <0.414.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 23:11:22.219 [info] <0.285.0> Loading routes from "/home/gaurav/careerhack/priv/careerhack.routes" ....
+2015-12-06 23:11:22.220 [info] <0.414.0> Route: "/greeting/list"Url
+[]
+2015-12-06 23:11:22.224 [notice] <0.414.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-12-06 23:11:22.229 [info] <0.414.0> GET /greeting/list [careerhack] 200 11ms
+2015-12-06 23:11:27.052 [notice] <0.416.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 23:11:27.052 [info] <0.285.0> Loading routes from "/home/gaurav/careerhack/priv/careerhack.routes" ....
+2015-12-06 23:11:27.053 [info] <0.416.0> Route: "/greeting/create"Url
+[]
+2015-12-06 23:11:27.057 [notice] <0.416.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-12-06 23:11:27.061 [info] <0.416.0> GET /greeting/create [careerhack] 200 8ms
+2015-12-06 23:11:29.166 [notice] <0.418.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 23:11:29.167 [info] <0.285.0> Loading routes from "/home/gaurav/careerhack/priv/careerhack.routes" ....
+2015-12-06 23:11:29.168 [info] <0.418.0> Route: "/greeting/create"Url
+[]
+2015-12-06 23:11:29.173 [notice] <0.418.0>@boss_controller_adapter_pmod:action:91 Request Method: 'POST', Tokens: []
+2015-12-06 23:11:29.178 [info] <0.418.0> POST /greeting/create [careerhack] 200 11ms
+2015-12-06 23:11:31.001 [notice] <0.420.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 23:11:31.002 [info] <0.285.0> Loading routes from "/home/gaurav/careerhack/priv/careerhack.routes" ....
+2015-12-06 23:11:31.002 [info] <0.420.0> Route: "/greeting/list"Url
+[]
+2015-12-06 23:11:31.006 [notice] <0.420.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-12-06 23:11:31.012 [info] <0.420.0> GET /greeting/list [careerhack] 200 10ms
+2015-12-06 23:11:31.148 [notice] <0.422.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 23:11:32.943 [notice] <0.423.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 23:11:32.944 [info] <0.285.0> Loading routes from "/home/gaurav/careerhack/priv/careerhack.routes" ....
+2015-12-06 23:11:32.944 [info] <0.423.0> Route: "/greeting/list"Url
+[]
+2015-12-06 23:11:32.948 [notice] <0.423.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-12-06 23:11:32.953 [info] <0.423.0> GET /greeting/list [careerhack] 200 9ms
+2015-12-06 23:11:33.067 [notice] <0.425.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 23:12:55.098 [notice] <0.426.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 23:12:55.099 [info] <0.285.0> Loading routes from "/home/gaurav/careerhack/priv/careerhack.routes" ....
+2015-12-06 23:12:55.100 [info] <0.426.0> Route: "/greeting/create"Url
+[]
+2015-12-06 23:12:55.102 [notice] <0.426.0>@boss_compiler:compile:47 Compile file "/home/gaurav/careerhack/src/model/greeting.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_record_compiler.trick_out_forms.2>},{token_transform,#Fun<boss_record_compiler.process_tokens.1>},{out_dir,undefined},{include_dirs,["/home/gaurav/careerhack/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2015-12-06 23:12:55.103 [info] <0.426.0>@boss_record_compiler:process_tokens:120 Tokens [{'-',{1,1}},{atom,{1,2},module},{'(',{1,8}},{atom,{1,9},greeting},{',',{1,17}},{'[',{1,19}},{var,{1,20},'Id'},{',',{1,22}},{var,{1,24},'GreetingText'},{']',{1,36}},{')',{1,37}},{dot,{1,38}},{'-',{2,1}},{atom,{2,2},compile},{'(',{2,9}},{atom,{2,10},export_all},{')',{2,20}},{dot,{2,21}},{atom,{4,1},validation_tests},{'(',{4,17}},{')',{4,18}},{'->',{4,20}},{'[',{5,2}},{'{',{5,3}},{fun,{5,4}},{'(',{5,7}},{')',{5,8}},{'->',{5,10}},{atom,{5,13},length},{'(',{5,19}},{var,{5,20},'GreetingText'},{')',{5,32}},{'>',{5,34}},{integer,{5,36},0},{end,{5,38}},{',',{5,41}},{string,{6,2},"Greeting must be non-empty!"},{'}',{6,31}},{',',{6,32}},{'{',{7,2}},{fun,{7,3}},{'(',{7,6}},{')',{7,7}},{'->',{7,9}},{atom,{7,12},length},{'(',{7,18}},{var,{7,19},'GreetingText'},{')',{7,31}},{'=<',{7,33}},{integer,{7,36},140},{end,{7,40}},{',',{7,43}},{string,{8,2},"Greeting must be tweetable"},{'}',{8,30}},{']',{8,31}},{dot,{8,32}},{atom,{9,2},before_create},{'(',{9,15}},{')',{9,16}},{'->',{9,18}},{var,{10,2},'ModifiedRecord'},{'=',{10,17}},{atom,{10,19},set},{'(',{10,22}},{atom,{10,23},greeting_text},{',',{10,36}},{atom,{11,7},re},{':',{11,9}},{atom,{11,10},replace},{'(',{11,17}},{var,{11,18},'GreetingText'},{',',{11,30}},{string,{12,10},"masticate"},{',',{12,21}},{string,{12,23},"chew"},{',',{12,29}},{'[',{13,10}},{'{',{13,11}},{atom,{13,12},return},{',',{13,18}},{atom,{13,20},list},{'}',{13,24}},{']',{13,25}},{')',{13,26}},{')',{13,27}},{',',{13,28}},{'{',{14,2}},{atom,{14,3},ok},{',',{14,5}},{var,{14,7},'ModifiedRecord'},{'}',{14,21}},{dot,{14,22}}]
+2015-12-06 23:12:55.103 [notice] <0.426.0>@boss_record_compiler:make_generated_forms:225 Module "greeting" Parameters ['Id','GreetingText'] Attributes[{compile,export_all}]
+2015-12-06 23:12:55.129 [notice] <0.426.0>@boss_controller_adapter_pmod:action:91 Request Method: 'POST', Tokens: []
+2015-12-06 23:12:55.133 [info] <0.426.0> POST /greeting/create [careerhack] 302 33ms
+2015-12-06 23:12:55.138 [notice] <0.429.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 23:12:55.138 [info] <0.285.0> Loading routes from "/home/gaurav/careerhack/priv/careerhack.routes" ....
+2015-12-06 23:12:55.139 [info] <0.429.0> Route: "/greeting/list"Url
+[]
+2015-12-06 23:12:55.143 [notice] <0.429.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-12-06 23:12:55.148 [info] <0.429.0> GET /greeting/list [careerhack] 200 9ms
+2015-12-06 23:18:47.356 [notice] <0.431.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 23:18:47.357 [info] <0.285.0> Loading routes from "/home/gaurav/careerhack/priv/careerhack.routes" ....
+2015-12-06 23:18:47.358 [info] <0.431.0> Route: "/greeting/list"Url
+[]
+2015-12-06 23:18:47.362 [notice] <0.431.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-12-06 23:18:47.367 [info] <0.431.0> GET /greeting/list [careerhack] 200 10ms
+2015-12-06 23:18:47.574 [notice] <0.433.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 23:18:52.500 [notice] <0.434.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 23:18:52.501 [info] <0.285.0> Loading routes from "/home/gaurav/careerhack/priv/careerhack.routes" ....
+2015-12-06 23:18:52.503 [info] <0.434.0> Route: "/greeting/goodbye"Url
+[]
+2015-12-06 23:18:52.506 [notice] <0.434.0>@boss_controller_adapter_pmod:action:91 Request Method: 'POST', Tokens: []
+2015-12-06 23:18:52.509 [info] <0.434.0> POST /greeting/goodbye [careerhack] 302 7ms
+2015-12-06 23:18:52.514 [notice] <0.436.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath careerhack
+2015-12-06 23:18:52.514 [info] <0.285.0> Loading routes from "/home/gaurav/careerhack/priv/careerhack.routes" ....
+2015-12-06 23:18:52.515 [info] <0.436.0> Route: "/greeting/list"Url
+[]
+2015-12-06 23:18:52.518 [notice] <0.436.0>@boss_controller_adapter_pmod:action:91 Request Method: 'GET', Tokens: []
+2015-12-06 23:18:52.523 [info] <0.436.0> GET /greeting/list [careerhack] 200 8ms
