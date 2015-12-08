@@ -1,0 +1,15 @@
+{
+  "name": "CareerHack",
+  "version": "0.0.0",
+  "authors": [
+    "Grant McGovern <grant@cobrain.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
