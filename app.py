@@ -8,7 +8,7 @@
 # @Web:    http://grantmcgovern.com
 #
 # @Last Modified by:   grantmcgovern
-# @Last Modified time: 2015-12-07 21:56:31
+# @Last Modified time: 2015-12-07 23:44:20
 
 
 import sys
@@ -22,10 +22,22 @@ from flask import (
 	send_from_directory
 	)
 
+## SQL
+from flask_sqlalchemy import SQLAlchemy
+
+## Models
+from models.models import db
+
 ########################################################
 ## FLASK APP
 ########################################################
 app = Flask("careerhack", static_url_path='/static')
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://plqahetrqpbetx:z5jiF9_oetqDGNGyzsE7Gicrq0@ec2-54-204-5-56.compute-1.amazonaws.com:5432/d5tdjoc0h355vn'
+
+########################################################
+## DATABASE
+########################################################
+db.init_app(app)
 
 ########################################################
 ## ROUTES

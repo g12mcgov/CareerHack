@@ -6,14 +6,27 @@
         <!-- Jquery -->
         <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
         <!-- Bootstrap js -->
-        <script type="text/javascript" src="/bower_components/bootstrap/dist/bootstrap.min.js') }}"></script>
+        <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
         <!-- Bootstrap css -->
-        <script src="{{ url_for('static', filename='bower_components/bootstrap/dist/bootstrap.min.css') }}"></script>
+        <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css"></script>
         <!-- Bootstrap Theme -->
-        <script src="{{ url_for('static', filename='bower_components/bootstrap/dist/bootstrap-theme.min.css') }}"></script>
+        <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap-theme.min.css"></script>
+        <!-- Local CSS -->
+    	<link rel="stylesheet" href="/css/style.css">
     </head>
     <body>
-    	<h1>CareerHack</h1>
+    	<div class="container-fluid">
+	    	<div class="header">
+	    		<h1>CareerHack</h1>
+	    	</div>
+	    </div>
+	    <div class="container-fluid">
+	    	<div class="slideshow"></div>
+	    </div>
+	    <div class="container-fluid">
+	    	<div class="companies">
+	    		<h1>Some of our companies...</h1>
+	    	</div>
     </body>
 </html>
 

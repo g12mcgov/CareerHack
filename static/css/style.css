@@ -1,0 +1,32 @@
+/* 
+* @Author: grantmcgovern
+* @Date:   2015-12-07 22:45:35
+* @Last Modified by:   grantmcgovern
+* @Last Modified time: 2015-12-07 23:03:29
+*/
+
+
+.header {
+
+}
+
+.header h1 {
+	text-align: center;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.slideshow {
+	background-image: url('/img/code.png');
+	height: 400px;
+	width: auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.companies {
+	text-align: center;
+	font-size: 1em;
+}
