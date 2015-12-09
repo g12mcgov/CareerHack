@@ -8,7 +8,7 @@
 # @Web:    http://grantmcgovern.com
 #
 # @Last Modified by:   grantmcgovern
-# @Last Modified time: 2015-12-07 23:44:20
+# @Last Modified time: 2015-12-09 00:20:36
 
 
 import sys
@@ -26,13 +26,13 @@ from flask import (
 from flask_sqlalchemy import SQLAlchemy
 
 ## Models
-from models.models import db
+from models.models import *
 
 ########################################################
 ## FLASK APP
 ########################################################
 app = Flask("careerhack", static_url_path='/static')
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://plqahetrqpbetx:z5jiF9_oetqDGNGyzsE7Gicrq0@ec2-54-204-5-56.compute-1.amazonaws.com:5432/d5tdjoc0h355vn'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://mjejkxwhhvmwop:o-nMAMf3-Z-XRgGSuhMm6i9yUE@ec2-54-204-8-224.compute-1.amazonaws.com:5432/d9iv7in7po4q9k'
 
 ########################################################
 ## DATABASE
@@ -48,7 +48,40 @@ def index():
 	"""
 	[index.html] - Returns the main index page
 	"""
-	return render_template('index.html')
+	with app.app_context():
+		companies = [company.Name for company in Company.query.all()]
+
+	return render_template(
+		'index.html',
+		number_of_companies=len(companies),
+		companies_list=companies,
+		url=request.base_url
+		)
+
+@app.route('/about')
+def about():
+	return render_template('about.html')
+
+
+@app.route('/<company_name>')
+def company(company_name):
+	"""
+	[Company] - Fills a company HTML 
+	"""
+	with app.app_context():
+		query = db.engine.execute(
+			'select * from "Companies" inner join (select * from "Interviewers" inner join (select * from "Questions" left outer join (select * from "Answers") as joinC using ("QuestionID")) as joinB using ("InterviewerID")) AS joinA using ("CompanyID") WHERE "Name"=\'%s\';' % company_name
+			)
+
+		metadata = [item for item in query]
+
+		print metadata
+
+	return render_template(
+		'company.html',
+		name=company_name,
+		metadata=metadata
+		)
 
 
 ########################################################

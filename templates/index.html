@@ -21,11 +21,29 @@
 	    	</div>
 	    </div>
 	    <div class="container-fluid">
-	    	<div class="slideshow"></div>
+	    	<!-- <div class="slideshow"></div> -->
+	    	<div class="billboard">
+		    	<div class="jumbotron">
+				  <h1>Nail your technical interviews.</h1>
+				  <p>Join us at CareerHack</p>
+				  <p><a class="btn btn-primary btn-lg" href="/about" role="button">Learn more</a></p>
+				</div>
+			</div>
 	    </div>
 	    <div class="container-fluid">
 	    	<div class="companies">
-	    		<h1>Some of our companies...</h1>
+	    		<div class="panel panel-default">
+				  <div class="panel-heading">
+				    <h3 class="panel-title">Some of our companies...</h3>
+				  </div>
+				  <div class="panel-body">
+				    <ul>
+		    			{% for company in companies_list %}
+		    				<li><a href="{{ url }}{{ company }}">{{ company }}</a></li>
+		    			{% endfor %}
+	    			</ul>
+				  </div>
+				</div>
 	    	</div>
     </body>
 </html>

@@ -2,7 +2,7 @@
 * @Author: grantmcgovern
 * @Date:   2015-12-07 22:45:35
 * @Last Modified by:   grantmcgovern
-* @Last Modified time: 2015-12-07 23:03:29
+* @Last Modified time: 2015-12-09 00:12:54
 */
 
 
@@ -26,7 +26,50 @@
 	padding-right: 0;
 }
 
+.billboard {
+	width: 800px;
+	margin: 0 auto;
+}
+
 .companies {
+	width: 800px;
+	margin: 0 auto;
+	margin-top: 1em;
+}
+
+.companies h1 {
 	text-align: center;
 	font-size: 1em;
+}
+
+.companies h3 {
+	font-size: 2em;
+	text-align: center;
+}
+
+.questions {
+	width: 800px;
+	margin: 0 auto;
+}
+
+.questions h1 {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.questions h3 {
+	text-align: center;
+}
+
+.questions h4 {
+	text-align: center;
+	font-size: 1em;
+}
+
+.about p {
+	text-align: center;
+}
+
+ul {
+    list-style-type: none;
 }
