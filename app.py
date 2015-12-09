@@ -50,11 +50,16 @@ def index():
 	"""
 	with app.app_context():
 		companies = [company.Name for company in Company.query.all()]
+		topics = [topic.TopicName for topic in Topic.query.all()]
+		jobtypes = [job.JobPosition for job in JobType.query.all()]
+
 
 	return render_template(
 		'index.html',
 		number_of_companies=len(companies),
 		companies_list=companies,
+		topic_list = topics,
+		job_list = jobtypes,
 		url=request.base_url
 		)
 
@@ -82,6 +87,26 @@ def company(company_name):
 		name=company_name,
 		metadata=metadata
 		)
+
+# @app.route('/<topic_names>')
+# def topics(topic_names):
+# 	"""
+# 	[Topics] - Fills Topics HTML 
+# 	"""
+# 	with app.app_context():
+# 		query = db.engine.execute(
+# 			'\'%s\';' % company_name
+# 			)
+
+# 		metadata = [item for item in query]
+
+# 		print metadata
+
+# 	return render_template(
+# 		'company.html',
+# 		name=company_name,
+# 		metadata=metadata
+# 		)
 
 
 ########################################################

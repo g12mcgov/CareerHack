@@ -47,6 +47,28 @@
 	text-align: center;
 }
 
+.topics {
+	width: 800px;
+	margin: 0 auto;
+	margin-top: 1em;
+}
+
+.topics h4 {
+	font-size: 2em;
+	text-align: center;
+}
+
+.jobs {
+	width: 800px;
+	margin: 0 auto;
+	margin-top: 1em;
+}
+
+.jobs h5 {
+	font-size: 2em;
+	text-align: center;
+}
+
 .questions {
 	width: 800px;
 	margin: 0 auto;

@@ -45,6 +45,36 @@
 				  </div>
 				</div>
 	    	</div>
+	    <div class="container-fluid">
+	    	<div class="topics">
+	    		<div class="panel panel-default">
+				  <div class="panel-heading">
+				    <h4 class="panel-title">Topics</h4>
+				  </div>
+				  <div class="panel-body">
+				    <ul>
+		    			{% for topic in topic_list %}
+		    				<li><a href="{{ url }}{{ topic }}">{{ topic }}</a></li>
+		    			{% endfor %}
+	    			</ul>
+				  </div>
+				</div>
+	    	</div>
+	    <div class="container-fluid">
+	    	<div class="jobs">
+	    		<div class="panel panel-default">
+				  <div class="panel-heading">
+				    <h5 class="panel-title">Jobs<h5>
+				  </div>
+				  <div class="panel-body">
+				    <ul>
+		    			{% for job in job_list %}
+		    				<li><a href="{{ url }}{{ topic }}">{{ job }}</a></li>
+		    			{% endfor %}
+	    			</ul>
+				  </div>
+				</div>
+	    	</div>
     </body>
 </html>
 
