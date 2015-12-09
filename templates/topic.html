@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>CareerHack</title>
+        <!-- Jquery -->
+        <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+        <!-- Bootstrap js -->
+        <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!-- Bootstrap css -->
+        <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css"></script>
+        <!-- Bootstrap Theme -->
+        <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap-theme.min.css"></script>
+        <!-- Local CSS -->
+    	<link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+    	<div class="topic">
+	    	<h1>{{ name }}</h1>
+	    	<ul class="question">
+	    		{% for topic in metadata %}
+    			<li>
+    				<div class="panel panel-default">
+						  <div class="panel-heading">
+                            <h3 class="panel-title">{{ topic[10] }}</h3>
+                          </div>
+                          <div class="panel-body">
+                            {% if topic[15] %}
+                                <p>{{ topic[15] }}</p>
+                            {% else %}
+                                <p style="text-align: center;"><b>No answer to display</b></p>
+                            {% endif %}
+                            <hr>
+						  	<h4>Asked by {{ topic[5] }} at {{ topic[1] }} who is a {{ topic[6] }}</h4>
+						  </div>
+					</div>
+    			</li>
+	    		{% endfor %}
+	    	</ul>
+	    </div>
+    </body>
+</html>
