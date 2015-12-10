@@ -109,6 +109,27 @@ def topics(topic_name):
         metadata=metadata
         )
 
+@app.route('/Jobs/<job_name>')
+def jobs(job_name):
+    print job_name
+    """
+    [Jobs] - Fills Jobs HTML 
+    """
+    with app.app_context():
+        query = db.engine.execute(
+            'select * from "Companies" inner join (select * from "Interviewers" inner join (select * from "Topics" inner join(select * from "JobTypes" inner join (select * from "Questions" left outer join (select * from "Answers") AS joinC using ("QuestionID")) AS joinA using ("JobID")) AS joinB using ("TopicID")) AS joinD using ("InterviewerID")) AS joinE using ("CompanyID") where "JobPosition" =\'%s\';' % job_name.replace("%20", " ")
+            )
+
+        metadata = [item for item in query]
+
+        print metadata
+
+    return render_template(
+        'job.html',
+        name=job_name, 
+        metadata=metadata
+        )
+
 
 ########################################################
 ## STATIC ASSETS

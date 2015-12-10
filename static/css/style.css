@@ -106,6 +106,24 @@
 	text-align: center;
 	font-size: 1em;
 }
+.job {
+	width: 800px;
+	margin: 0 auto;
+}
+
+.job h1 {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.job h3 {
+	text-align: center;
+}
+
+.job h4 {
+	text-align: center;
+	font-size: 1em;
+}
 
 .about p {
 	text-align: center;
