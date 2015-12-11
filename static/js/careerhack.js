@@ -2,7 +2,7 @@
 * @Author: grantmcgovern
 * @Date:   2015-12-10 16:36:40
 * @Last Modified by:   grantmcgovern
-* @Last Modified time: 2015-12-10 18:52:00
+* @Last Modified time: 2015-12-11 00:50:53
 */
 
 $(document).ready(function() {
@@ -31,8 +31,12 @@ $(document).ready(function() {
 			dataType: 'JSON',
 			data: JSON.stringify(data),
 			success: function(data) {
-				console.log("posted");
+
+			},
+			error: function(error) {
+				console.log(error);
 			}
 		});
+		$("#add-question-modal").modal('hide');
 	});
 });
