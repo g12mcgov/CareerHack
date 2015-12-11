@@ -23,9 +23,6 @@
 		    	<hr>
 		    	{% if exists %}
 			    	<div class="container-fluid">
-			    		<button id="add-question" type="button" class="btn btn-success">
-			    			Add Question <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-			    		</button>
 			    		<div id="add-question-modal" class="modal fade" tabindex="-1" role="dialog">
 							<div class="modal-dialog">
 								<div class="modal-content">
@@ -99,6 +96,9 @@
 		    			</li>
 			    		{% endfor %}
 			    	</ul>
+			    	<button id="add-question" type="button" class="btn btn-success">
+			    		Add Question <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+			    	</button>
 			    {% else %}
 			    	<h2>Sorry, we don't have any questions for that company</h2>
 			    {% endif %}
