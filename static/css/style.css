@@ -2,9 +2,13 @@
 * @Author: grantmcgovern
 * @Date:   2015-12-07 22:45:35
 * @Last Modified by:   grantmcgovern
-* @Last Modified time: 2015-12-10 16:35:16
+* @Last Modified time: 2015-12-10 23:02:53
 */
 
+
+ul {
+    list-style-type: none;
+}
 
 .header {
 
@@ -14,6 +18,13 @@
 	text-align: center;
 	margin-top: 1em;
 	margin-bottom: 1em;
+	font-family: 'Lobster', cursive;
+	font-size: 4em;
+}
+
+.header a {
+	color: black;
+	text-decoration: none !important;
 }
 
 .slideshow {
@@ -29,6 +40,10 @@
 .billboard {
 	width: 800px;
 	margin: 0 auto;
+}
+
+.billboard h1 {
+	font-size: 4em;
 }
 
 .companies {
@@ -79,6 +94,12 @@
 	margin-bottom: 1em;
 }
 
+.questions h2 {
+	text-align: center;
+	font-size: 1em;
+	margin: 0 auto;
+}
+
 .questions h3 {
 	text-align: center;
 }
@@ -89,7 +110,8 @@
 }
 
 .questions button {
-	float: right;
+	display: block;
+	margin: 0 auto;
 	margin-bottom: 10px;
 }
 
@@ -134,6 +156,6 @@
 	text-align: center;
 }
 
-ul {
-    list-style-type: none;
+#footer-text {
+	text-align: center;
 }

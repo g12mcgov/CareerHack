@@ -8,7 +8,7 @@
 # @Web:    http://grantmcgovern.com
 #
 # @Last Modified by:   grantmcgovern
-# @Last Modified time: 2015-12-10 22:28:52
+# @Last Modified time: 2015-12-10 22:52:16
 
 
 import sys
@@ -74,15 +74,24 @@ def company(company_name):
     """
     with app.app_context():
         query = db.engine.execute(
-            'select * from "Companies" inner join (select * from "Interviewers" inner join (select * from "Questions" left outer join (select * from "Answers") as joinC using ("QuestionID")) as joinB using ("InterviewerID")) AS joinA using ("CompanyID") WHERE "Name"=\'%s\';' % company_name
+            'SELECT * FROM "Companies" INNER JOIN \
+            	(SELECT * FROM "Interviewers" INNER JOIN \
+            		(SELECT * FROM "Questions" left OUTER JOIN \
+            			(SELECT * FROM "Answers") AS joinC \
+            			USING ("QuestionID")) AS joinB \
+        				USING ("InterviewerID")) AS joinA \
+        				USING ("CompanyID") \
+    				WHERE "Name"=\'%s\';' % company_name
             )
 
         metadata = [item for item in query]
+        exists = True if metadata else False
 
     return render_template(
         'company.html',
         name=company_name,
-        metadata=metadata
+        metadata=metadata,
+    	exists=exists
         )
 
 @app.route('/Topics/<topic_name>')
@@ -93,16 +102,16 @@ def topics(topic_name):
     """
     with app.app_context():
         query = db.engine.execute(
-            'select * from "Companies" inner join \
-            	(select * from "Interviewers" inner join \
-            		(select * from "Topics" inner join \
-            			(select * from "Questions" left outer join \
-            				(select * from "Answers") AS joinB \
-            				using ("QuestionID")) AS joinA \
-        					using ("TopicID")) as joinC \
-        					using ("InterviewerID")) AS joinD \
-        					using ("CompanyID") \
-    					where "TopicName" =\'%s\';' % topic_name
+            'SELECT * FROM "Companies" INNER JOIN \
+            	(SELECT * FROM "Interviewers" INNER JOIN \
+            		(SELECT * FROM "Topics" INNER JOIN \
+            			(SELECT * FROM "Questions" LEFT OUTER JOIN \
+            				(SELECT * FROM "Answers") AS joinB \
+            				USING ("QuestionID")) AS joinA \
+        					USING ("TopicID")) AS joinC \
+        					USING ("InterviewerID")) AS joinD \
+        					USING ("CompanyID") \
+    					WHERE "TopicName"=\'%s\';' % topic_name
             )
 
         metadata = [item for item in query]
@@ -121,18 +130,18 @@ def jobs(job_name):
     """
     with app.app_context():
         query = db.engine.execute(
-            'select * from "Companies" inner join \
-            	(select * from "Interviewers" inner join \
-            		(select * from "Topics" inner join \
-            			(select * from "JobTypes" inner join \
-            				(select * from "Questions" left outer join \
-            					(select * from "Answers") AS joinC \
-            					using ("QuestionID")) AS joinA \
-        						using ("JobID")) AS joinB \
-        						using ("TopicID")) AS joinD \
-        						using ("InterviewerID")) AS joinE \
-        						using ("CompanyID") \
-    						where "JobPosition" =\'%s\';' % job_name.replace("%20", " ")
+            'SELECT * FROM "Companies" INNER JOIN \
+            	(SELECT * FROM "Interviewers" INNER JOIN \
+            		(SELECT * FROM "Topics" INNER JOIN \
+            			(SELECT * FROM "JobTypes" INNER JOIN \
+            				(SELECT * FROM "Questions" LEFT OUTER JOIN \
+            					(SELECT * FROM "Answers") AS joinC \
+            					USING ("QuestionID")) AS joinA \
+        						USING ("JobID")) AS joinB \
+        						USING ("TopicID")) AS joinD \
+        						USING ("InterviewerID")) AS joinE \
+        						USING ("CompanyID") \
+    						WHERE "JobPosition" =\'%s\';' % job_name.replace("%20", " ")
             )
 
         metadata = [item for item in query]
