@@ -1,8 +1,5 @@
 # CareerHack
 
-Overview
-=======
-
 People who are interviewing for tech companies generally rely on Glassdoor to know what questions they could be asked. Glassdoor allows anonymous users to post their application experience. People what the interviews were like, the difficulty of the interviews, and any questions candidates have posted. While this is a great resource, there a few flaws. People cannot see what specific person at the company asked the question, and their role. Many times, the interview questions depend heavily on who is conducting the interview. Another flaw is that answers cannot be posted. Users are unable to and post their solutions to the questions. Our aim with this project was to solve this problem. 
 
 CareerHack is a resource for people who are interviewing in tech companies. This website allows job hunters to find what questions they could be asked when they are interviewing. They can not only see the questions that have been asked before but also see by what company they were asked by, what specific person asked them the question, the role of that person at the company, possible answers to the question they asked, and when the question was asked. They can figure out the question they might be asked selecting the company name, or topic, or job type. 
