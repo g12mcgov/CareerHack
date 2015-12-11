@@ -8,7 +8,7 @@
 # @Web:    http://grantmcgovern.com
 #
 # @Last Modified by:   grantmcgovern
-# @Last Modified time: 2015-12-09 00:20:36
+# @Last Modified time: 2015-12-10 22:28:52
 
 
 import sys
@@ -67,7 +67,6 @@ def index():
 def about():
     return render_template('about.html')
 
-
 @app.route('/<company_name>')
 def company(company_name):
     """
@@ -79,8 +78,6 @@ def company(company_name):
             )
 
         metadata = [item for item in query]
-
-        print metadata
 
     return render_template(
         'company.html',
@@ -96,12 +93,19 @@ def topics(topic_name):
     """
     with app.app_context():
         query = db.engine.execute(
-            'select * from "Companies" inner join (select * from "Interviewers" inner join (select * from "Topics" inner join(select * from "Questions" left outer join (select * from "Answers") AS joinB using ("QuestionID")) AS joinA using ("TopicID")) as joinC using ("InterviewerID")) AS joinD using ("CompanyID") where "TopicName" =\'%s\';' % topic_name
+            'select * from "Companies" inner join \
+            	(select * from "Interviewers" inner join \
+            		(select * from "Topics" inner join \
+            			(select * from "Questions" left outer join \
+            				(select * from "Answers") AS joinB \
+            				using ("QuestionID")) AS joinA \
+        					using ("TopicID")) as joinC \
+        					using ("InterviewerID")) AS joinD \
+        					using ("CompanyID") \
+    					where "TopicName" =\'%s\';' % topic_name
             )
 
         metadata = [item for item in query]
-
-        print metadata
 
     return render_template(
         'topic.html',
@@ -117,12 +121,21 @@ def jobs(job_name):
     """
     with app.app_context():
         query = db.engine.execute(
-            'select * from "Companies" inner join (select * from "Interviewers" inner join (select * from "Topics" inner join(select * from "JobTypes" inner join (select * from "Questions" left outer join (select * from "Answers") AS joinC using ("QuestionID")) AS joinA using ("JobID")) AS joinB using ("TopicID")) AS joinD using ("InterviewerID")) AS joinE using ("CompanyID") where "JobPosition" =\'%s\';' % job_name.replace("%20", " ")
+            'select * from "Companies" inner join \
+            	(select * from "Interviewers" inner join \
+            		(select * from "Topics" inner join \
+            			(select * from "JobTypes" inner join \
+            				(select * from "Questions" left outer join \
+            					(select * from "Answers") AS joinC \
+            					using ("QuestionID")) AS joinA \
+        						using ("JobID")) AS joinB \
+        						using ("TopicID")) AS joinD \
+        						using ("InterviewerID")) AS joinE \
+        						using ("CompanyID") \
+    						where "JobPosition" =\'%s\';' % job_name.replace("%20", " ")
             )
 
         metadata = [item for item in query]
-
-        print metadata
 
     return render_template(
         'job.html',
@@ -130,6 +143,25 @@ def jobs(job_name):
         metadata=metadata
         )
 
+@app.route('/insert-question/<company_name>', methods=['POST'])
+def insert_question_by_company(company_name):
+	data = json.loads(request.get_data())
+	if data:
+		# First get company ID
+		company_id = db.engine.execute(
+			'SELECT "CompanyID" FROM "Companies" WHERE "Name"=\'%s\';' % company_name
+		).first()[0]
+
+		# Insert Interviewer
+		insert_interviewer_query = db.engine.execute(
+			'INSERT INTO "Interviewers" ("Interviewer", "Position", "CompanyID") VALUES (\'{}\', \'{}\', \'{}\');'
+			.format(
+				data['interviewer_input'], 
+				data['position_input'],
+				company_id)
+			)
+
+	return Response(mimetype="application/json")
 
 ########################################################
 ## STATIC ASSETS

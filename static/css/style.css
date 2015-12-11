@@ -2,7 +2,7 @@
 * @Author: grantmcgovern
 * @Date:   2015-12-07 22:45:35
 * @Last Modified by:   grantmcgovern
-* @Last Modified time: 2015-12-09 00:12:54
+* @Last Modified time: 2015-12-10 16:35:16
 */
 
 
@@ -86,6 +86,11 @@
 .questions h4 {
 	text-align: center;
 	font-size: 1em;
+}
+
+.questions button {
+	float: right;
+	margin-bottom: 10px;
 }
 
 .topic {

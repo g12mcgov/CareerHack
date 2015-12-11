@@ -13,30 +13,91 @@
         <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap-theme.min.css"></script>
         <!-- Local CSS -->
     	<link rel="stylesheet" href="/css/style.css">
+    	<!-- Local JS -->
+    	<script type="text/javascript" src="/js/careerhack.js"></script>
     </head>
     <body>
-    	<div class="questions">
-	    	<h1>{{ name }}</h1>
-	    	<ul class="question">
-	    		{% for question in metadata %}
-    			<li>
-    				<div class="panel panel-default">
-						<div class="panel-heading">
-						    <h3 class="panel-title">{{ question[8] }}</h3>
-						  </div>
-						  <div class="panel-body">
-						  	<h4>Asked by {{ question[5] }}</h4>
-						  	<hr>
-					  		{% if question[14] %}
-					  			<p>{{ question[14] }}</p>
-					  		{% else %}
-					  			<p style="text-align: center;"><b>No answer to display</b></p>
-					  		{% endif %}
-						  </div>
-					</div>
-    			</li>
-	    		{% endfor %}
-	    	</ul>
-	    </div>
+    	<div class="container-fluid">
+	    	<div class="questions" data-company-name="{{ name }}">
+		    	<h1>{{ name }}</h1>
+		    	<div class="container-fluid">
+		    		<button id="add-question" type="button" class="btn btn-success">
+		    			Add Question <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+		    		</button>
+		    		<div id="add-question-modal" class="modal fade" tabindex="-1" role="dialog">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+										<h4 class="modal-title">Add Question for {{ name }}</h4>
+								</div>
+								<div class="modal-body">
+									<form id="add-question-form" class="form-horizontal">
+										<div class="form-group">
+											<label for="interviewer" class="col-sm-2 control-label">Interviewer</label>
+											<div class="col-sm-10">
+												<input type="text" class="form-control" id="interviewer-input" placeholder="Interviewer">
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="position" class="col-sm-2 control-label">Position</label>
+											<div class="col-sm-10">
+												<input type="text" class="form-control" id="position-input" placeholder="Position">
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="question" class="col-sm-2 control-label">Question</label>
+											<div class="col-sm-10">
+												<textarea class="form-control" rows="3" id="question-input" placeholder="Question"></textarea>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="answer" class="col-sm-2 control-label">Answer</label>
+											<div class="col-sm-10">
+												<textarea class="form-control" rows="5" id="answer-input" placeholder="Answer"></textarea>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="col-sm-offset-2 col-sm-10">
+												<div class="checkbox">
+													<label>
+														<input type="checkbox"> Undergraduate?
+													</label>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+								<div class="modal-footer">
+									<button id="add-question-form-button" type="button" class="btn btn-primary">Submit</button>
+								</div>
+							</div><!-- /.modal-content -->
+						</div><!-- /.modal-dialog -->
+					</div><!-- /.modal -->
+			    </div>
+		    	<ul class="question">
+		    		{% for question in metadata %}
+	    			<li>
+	    				<div class="panel panel-default">
+							<div class="panel-heading">
+							    <h3 class="panel-title">{{ question[8] }}</h3>
+							  </div>
+							  <div class="panel-body">
+							  	<h4>Asked by {{ question[5] }}</h4>
+							  	<hr>
+						  		{% if question[14] %}
+						  			<p>{{ question[14] }}</p>
+						  		{% else %}
+						  			<p style="text-align: center;"><b>No answer to display</b></p>
+						  		{% endif %}
+							  </div>
+						</div>
+	    			</li>
+		    		{% endfor %}
+		    	</ul>
+		    </div>
+		</div>
     </body>
 </html>
